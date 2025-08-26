@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sing-It! — Indie Karaoke</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <main class="card">
+    <section class="panel">
+      <h1 class="title">🎤 Sing-It! Indie Edition</h1>
+      <p class="subtitle">Press <strong>N</strong> for new song • <strong>H</strong> for hint • <strong>S</strong> when you sang it</p>
+
+      <div class="song-box" id="songBox">
+        <div class="song-title" id="songTitle">Press <strong>New Song</strong> to start</div>
+        <div class="song-meta" id="songMeta">Language • Year</div>
+      </div>
+
+      <div class="controls">
+        <button class="btn" id="newBtn">New Song (N)</button>
+        <button class="btn" id="hintBtn">Hint (H)</button>
+        <button class="btn" id="sangBtn">I Sang It! (S)</button>
+        <button class="btn ghost" id="skipBtn">Skip</button>
+      </div>
+
+      <div class="hint" id="hintBox">
+        <div class="hint-text" id="hintText"></div>
+      </div>
+    </section>
+
+    <aside class="side">
+      <h3>👥 Players</h3>
+      <div class="add-player">
+        <input id="playerInput" placeholder="Player name (press Enter)" />
+        <button class="btn" id="addBtn">Add</button>
+      </div>
+      <div class="players-list" id="playersList"></div>
+      <div style="display:flex; gap:10px; margin-top:10px;">
+        <button class="btn" id="exportBtn">Export (E)</button>
+        <button class="btn ghost" id="resetBtn">Reset</button>
+      </div>
+    </aside>
+  </main>
+
+  <p class="muted-note">Made for fun 🎶 by Deepak</p>
+
+  <script src="index.js"></script>
+</body>
+</html>
